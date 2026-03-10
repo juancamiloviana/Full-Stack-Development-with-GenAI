@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [1,2,3,4,5]
+
+        document.write("<br/> display all element using for loop <br/>")
+
+        // standar for loop (in)
+        document.write("<br/> standard loop")
+        for (let i in num) {
+            document.write("<br/>"+num[i]+" index " + i)
+        }
+
+        // elaborated for for custimized requierements
+        document.write("<br/> customized loop")
+        for(let i=0;i<num.length;i++) {
+            //document.write("<br/>"+num[i])
+            if(num[i]%2==0){
+                document.write("<br/>"+num[i])
+            }
+        }
+
+        document.write("<br/> display all element using of loop <br/>")
+        for(let n of num) {
+            document.write("<br/> value "+n)
+        }
+        
+
+        // in for index, while of for value
+
+        // forEach method with callback function
+        num.forEach(v => document.write("<br/> value is "+v))
+        num.forEach((v, i) => document.write("<br/> value is "+v+" index is " + i))
+
+        document.write("<br/> <br/> forEach methods <br/>")
+
+        num.filter(v => v%2 == 0).forEach(v=> document.write("<br/> even number is "+v))
+        numc.map(v => v*2).forEach(v => document.write("<br/> double of number is "+v))
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg1 = "welcome1";
+        let msg2 = new String("welcome2")
+
+        let sname = "Juan"
+        let tname = "Akash"
+
+        document.write(msg1 + "<br>");
+        document.write(msg2 + "<br>");
+        document.write(msg1.toUpperCase() + "<br>");
+        document.write(msg2.toLowerCase() + "<br>");
+        document.write(msg1.length + "<br>");
+        document.write(msg2.length + "<br>");
+        document.write("<br/>"+msg1.substr(3))
+        document.write("<br/>"+msg1.substr(3,2))
+        document.write("<br/>"+msg1.replace("come","go"))
+
+        document.write("<br/> Welcome"+sname+" to training by " + tname)
+        document.write(`<br/> Welcome ${sname} to training by ${tname}`)
+    </script>
+</body>
+</html>

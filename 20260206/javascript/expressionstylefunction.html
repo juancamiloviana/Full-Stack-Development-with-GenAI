@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        display1();
+        function display1() {
+            document.write("<br/> Normal Style Function");
+        }
+        display1();
+
+        //display2(); // JS hosting doesn't support
+        let display2 = function() {
+            document.write("<br/> Expression Style Function");
+        }
+        display2();
+    </script>
+</body>
+</html>

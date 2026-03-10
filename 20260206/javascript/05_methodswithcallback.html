@@ -33,15 +33,21 @@
         
 
         // in for index, while of for value
-
+        document.write("<br/> <br/> forEach methods <br/>")
         // forEach method with callback function
         num.forEach(v => document.write("<br/> value is "+v))
-        num.forEach((v, i) => document.write("<br/> value is "+v+" index is " + i))
+        document.write("<br/>")
 
-        document.write("<br/> <br/> forEach methods <br/>")
+        num.forEach((v, i) => document.write("<br/> value is "+v+" index is " + i))
+        document.write("<br/>")
+
+        document.write("<br/>forEach methods")
+        document.write("<br/>")
 
         num.filter(v => v%2 == 0).forEach(v=> document.write("<br/> even number is "+v))
-        numc.map(v => v*2).forEach(v => document.write("<br/> double of number is "+v))
+        document.write("<br/>")
+        
+        num.map(v => v*2).forEach(v => document.write("<br/> double of number is "+v))
 
 
     </script>

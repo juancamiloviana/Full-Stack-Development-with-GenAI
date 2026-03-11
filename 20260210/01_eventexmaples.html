@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func1() {
+            alert("event generated in func1 function")
+        }
+
+        //let button = document.getElementById("b1")
+
+    </script>
+</head>
+<body>
+    <h2>Event Examples</h2>
+    <input type="button" value="Click Here1" onclick="alert('event generated')">
+    <input type="button", value="Click Here2" onclick="func1()">
+    <input type="button", value="Click Here3" id="b1">
+    <script>
+        let button = document.getElementById("b1")
+        button.addEventListener("click", ()=>{
+            alert("Event generted in JS and registered inside JS code")
+        })
+    </script>
+</body>
+</html>

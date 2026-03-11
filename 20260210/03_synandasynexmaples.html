@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function syncode(){
+            console.log("1st statement")
+            console.log("2nd statement")
+            console.log("3rd statement")
+        }
+
+        function asyncode() {
+            console.log("1st statement")
+            setTimeout(
+                ()=>{
+                console.log("2nd statement working as asynchronous")
+                }
+            ,5000)
+            console.log("3rd statement")
+        }
+
+    </script>
+</body>
+    <input type="button" value="Syn Call" onclick="syncode()"/>
+    <input type="button" value="Asyn Call" onclick="asyncode()"/>
+</html>

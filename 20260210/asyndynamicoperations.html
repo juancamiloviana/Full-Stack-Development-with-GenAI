@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = 0
+        function task() {
+            alert("event fired")
+            
+            setInterval(()=>{
+                let dateInfo = new Date();
+                document.getElementById("result").innerHTML=i
+                //document.getElementById("result").innerHTML=dateInfo;
+                //document.getElementById("result").innerHTML=dateInfo.getHours()+":"+dateInfo.getMinutes()+":"+dateInfo.getSeconds();
+                let DateAndTimeInfo = `Date : ${dateInfo.getDate()}/${dateInfo.getMonth()+1}/${dateInfo.getUTCFullYear()}
+                Time: ${dateInfo.getHours()}:${dateInfo.getMinutes()}:${dateInfo.getSeconds()}`
+                document.getElementById("result").innerHTML=DateAndTimeInfo;
+                // dynamic styling
+                if(i%2==0){
+                    document.getElementById("n1").style.color="RED"
+                    document.getElementById("n1").style.fontSize="10pt"
+                }else{
+                    document.getElementById("n1").style.color="GREEN"
+                    document.getElementById("n1").style.fontSize="15pt"
+                }
+
+                i++;
+            },1000)
+        }
+    </script>
+</head>
+<body onload="task()">
+    <h2 id="n1">Asynchronous dynamic operation</h2>
+    <p id="result"></p>
+    <time datetime="dateandtime"></time>
+    <span id="dateandtime" style="color: aqua;"></span>
+</body>
+</html>

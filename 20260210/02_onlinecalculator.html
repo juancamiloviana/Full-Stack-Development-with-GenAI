@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add() {
+            let n1Value = document.getElementById("n1").value;
+            let n2Value = document.getElementById("n2").value;
+            let sum = parseInt(n1Value) + parseInt(n2Value)
+            document.getElementById("result").value=sum;
+        }
+    </script>
+</head>
+<body>
+    <h2>Simple Web Calculator</h2>
+    1st Number : <input type="number", id="n1"><br/>
+    2nd Number : <input type="number", id="n2"><br/>
+    Result : <input type="text" id="result"><br/>
+    Result is <div id="output"></div>
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Sub" onclick="sub()">
+</body>
+</html>

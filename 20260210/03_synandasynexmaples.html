@@ -13,18 +13,22 @@
             console.log("3rd statement")
         }
 
+        var stopwork
+
         function asyncode() {
             console.log("1st statement")
-            setTimeout(
-                ()=>{
-                console.log("2nd statement working as asynchronous")
-                }
-            ,5000)
+            setTimeout(()=>{console.log("2nd statement asyn with timeout")},5000)
             console.log("3rd statement")
+            stopwork = setInterval(()=>{console.log("4th statement asyn with setinterval")},1000)
+        }
+
+        function stop() {
+            clearInterval(stopwork)
         }
 
     </script>
 </body>
     <input type="button" value="Syn Call" onclick="syncode()"/>
     <input type="button" value="Asyn Call" onclick="asyncode()"/>
+    <input type="button" value="Stop" onclick="stop()"/>
 </html>

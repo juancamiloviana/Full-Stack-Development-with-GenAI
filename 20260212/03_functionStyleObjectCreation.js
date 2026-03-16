@@ -51,7 +51,6 @@ function Employee(id,name,age){
     this.doj = new Date()
 
     this.displayEmployeeDetails = function(){
-        document.write("<br/> Employee details")
         document.write("<br/> ID: " + this.id)
         document.write("<br/> Name: " + this.name)
         document.write("<br/> Age: " + this.age)
@@ -72,9 +71,11 @@ function Employee(id,name,age){
 
 let emp1 = new Employee(100,"John",25)
 let emp2 = new Employee(101,"Charlie",21)
-document.write("<br/>------ Employee 1 ------")
+document.write("<br/><h1> Employee Details </h1>")
+document.write("<br/><h2>Employee 1</h2>")
 emp1.displayEmployeeDetails()
-document.write("<br/>------ Employee 2.1 ------")
+document.write("<br/><h2>Employee 2.1</h2>")
 emp2.displayEmployeeDetails()
-document.write("<br/>------ Employee 2.2 ------")
+document.write("<br/><h2>Employee 2.2</h2>")
+emp2.updateAge(32)
 emp2.displayEmployeeDetails()
